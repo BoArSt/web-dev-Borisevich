@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color:aliceblue;
+    }
+    header{
+        background-color: brown;
+        text-align: right;
+        color:white;
+        padding:20px;
+    }
+    nav{
+        float:right;
+        width:25%;
+        background:#bc4242;
+        padding:20px;
+    }
+    nav ul {
+     list-style-type:circle;
+     padding: 0;
+    }
+    section::after {
+     content: "";
+     display: table;
+     clear: both;
+    }
+    footer {
+     background-color: brown;
+     padding: 40px;
+     text-align: left;
+     color: white;
+    }
+    #q1{
+        font-weight: bolder;
+    }
+    #q2{
+        font-weight: bolder;
+    }
+    #q3{
+        font-weight: bolder;
+    }
+    #q4{
+        font-weight: bolder;
+    }
+    #q5{
+        font-weight: bolder;
+    }
+    #q6{
+        font-weight: bolder;
+    }
+</style>
+    </head>
+    <body>
+        <header>Borisevich Artem PW1</header>
+        <section>
+            <nav>
+                <ul>
+                <li><a href="#q1" style="color:white">1.When HTML5 has become a standard? What were the main reasons for developing new standard?</a></li>
+                <li><a href="#q2" style="color:white">2.What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</a></li>
+                <li><a href="#q3" style="color:white">3.What is the minimal HTML page code?</a></li>
+                <li><a href="#q4" style="color:white">4.Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</a></li>
+                <li><a href="#q5" style="color:white">5.How you can check browser support for particular tag or attribute?</a></li>
+                <li><a href="#q6" style="color:white">6.What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?</a></li>
+                </ul>
+            </nav>
+          <main>
+            <dl>
+            <dt id="q1">1. When HTML5 has become a standard? What were the main reasons for developing new standard?</dt>
+            <dd>HTML5 became a standard in October 2014. The main reasons for developing this new standard were to improve the functionality and interoperability of web pages, to support multimedia content without the need for plugins, and to provide better support for mobile devices and accessibility features.</dd>
+            <dt id="q2">2. What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</dt>
+            <dd>The W3C HTML5 specification is a stable version that was finalized in October 2014, while the WHATWG HTML Living Standard is a continuously updated document that reflects ongoing changes and additions to the HTML language. The WHATWG version is more dynamic and flexible, allowing for rapid updates and improvements based on community feedback and evolving web technologies. Both versions aim to define the same set of standards for HTML, but the WHATWG version may include newer features and updates not yet incorporated into the W3C specification.</dd>
+            <dt id="q3">3. What is the minimal HTML page code?</dt>
+            <dd>The minimal useful HTML code,as I found on GitHub is:
+                <pre>
+                &lt!doctype html&gt;
+                &lthtml lang=en&gt;
+                &lthead&gt;
+                &ltmeta charset=utf-8&gt;
+                &lttitle&gt;blah&lt/title&gt;
+                &lt/head&gt;
+                &ltbody&gt;
+                &ltp&gtI'm the content&lt/p&gt;
+                &lt/body&gt;
+                &lt/html&gt;
+                &lt/pre&gt;,
+                or &lt!doctype html&gt;&ltmeta charset=utf-8&gt;&lttitle&gt;shortest html5&lt/title&gt;. 
+                This two variants has 12 and 1 lines.</dd>
+                <dt id="q4">4. Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</dt>
+                <dd>Semantic markup focuses on using HTML elements to convey the meaning and structure of content, making it more accessible to both users and search engines. Presentational markup, on the other hand, involves using HTML elements for styling and visual presentation, which can lead to less maintainable code and hinder accessibility.</dd>
+                <dd>Presentational markup is considered deprecated now because it mixes content with styling, making it harder to update and maintain. Separating content and presentation through CSS allows for more flexibility in design changes without affecting the underlying structure of the content. Semantic markup is preferred as it enhances accessibility, search engine optimization, and overall code quality.</dd>
+                <dt id="q5">5. How you can check browser support for particular tag or attribute?</dt>
+                <dd>You can check browser support for a particular HTML tag or attribute by using online resources like caniuse.com or MDN web docs. These websites provide detailed information on browser compatibility for various HTML elements, CSS properties, and JavaScript features. Additionally, you can use tools like BrowserStack or cross-browser testing services to test your website across different browsers and versions to ensure compatibility.</dd>
+                <dt id="q6">6. What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?</dt>
+                <dd>The HTML standard officially supports the following audio and video formats:
+                    <dd>Audio:</dd> 
+                       <dd>- MP3</dd>
+                       <dd>- WAV</dd>
+                       <dd>- OGG</dd>
+                    <dd>Video:</dd>
+                       <dd>- MP4</dd>
+                       <dd>- WebM</dd>
+                       <dd>- OGG</dd>
+                    <dd>If you use other formats that are not officially supported by the HTML standard, the audio or video may not play correctly or at all in some browsers. Browsers may not be able to decode or render unsupported formats, resulting in a blank space or an error message instead of the intended media content. To ensure cross-browser compatibility and proper playback, it is recommended to use the officially supported audio and video formats listed above when adding multimedia content to your website.</dd></dd>
+                </dl>
+            </main>
+                <iframe width="320" height="240" src="https://www.youtube.com/embed/UZqrfDd1IEs" title="Secret Santa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <video width="320" height="240" controls>
+                <source src="SecretSanta.mp4" type="video/mp4">
+                <source src="SecretSanta.webm" type="video/webm">
+                </video>
+                <audio width="100" height="100" controls>
+                <source src="siren.wav" type="audio/wav">
+                </audio>
+        </section>
+        <footer>
+           <p>Actually,this work wasn't difficult or complicated,everything was clear for me. I've learned the html and css basics in school,so I don't saw any new information. Also it's very interesting to do some tasks in web-design.</p>
+           <img src="1.png" alt="SB BSU logo"
+           style="width:auto;height:auto;">
+        </footer>
+    </body>
+</html>
