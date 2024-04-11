@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>PW3</title>
+ <style>
+   body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color:aliceblue;
+    }
+    header{
+        background-color: brown;
+        text-align: right;
+        color:white;
+        padding:20px;
+    }
+    article{
+        font-size: larger;
+        font-weight: bolder;
+    }
+    p.dashed {border-style: dashed; border-color: brown; border-inline:inherit; padding: 1%;}
+    p.solid {border-style: solid;border-color: brown;  border-block:inherit ; margin: 1%;}
+    p.hidden {border-style: hidden;  border-block:inherit ;}
+    p.back1{background-color:azure;}
+    p.back2{background-color: #353535;}
+    p.back3{background-color: rgba(145, 0, 0, 0.619);}
+    p.back4{background: linear-gradient(red,orange,yellow,green,blue,purple);}
+    p.back5{background: linear-gradient(red,white,red,white);}
+    p.back6{background-image:url("walrus.jpg");background-repeat:round;}
+    p.back7{background:url("1.jpg") no-repeat center, url("2.jpg") no-repeat left;}
+    article.mix {border-style: dotted dashed solid double;border-color: brown; border-inline:inherit;}
+ </style>
+</head>
+<body>
+    <header>Borisevich Artem PW3</header>
+    <main>
+        <article class="mix">Answers to the quesstions:</article>
+      <h2>Research for and describe the ways to open developers console in Mozilla Firefox and Safari.</h2>
+        <p>To open DevTools in Mozilla Firefox in that way: Tools > Web Developer > Web Developer Tools, or you can press Ctrl + Shift + I.</p>
+        <p>And to open DevTools in Safari you need to go into Safari's preferences (Safari Menu > Preferences) and select the Advanced Tab. Once that menu is enabled, you will find the developer console by clicking on Develop > Show Javascript Console or also there are a keybord combination Option + Command + C.</p>
+      <h2>What way of including internal links into the HTML page you would consider generally preferable: absolute or relative links? Describe use cases for choosing absolute links and choosing relative links.</h2>
+        <p>Relative links are links that are specified relative to the current page's location within the website directory structure. They are more flexible and easier to maintain.</p>
+        <strong>You can use them for:</strong>
+        <p class="dashed">- Linking to external websites or resources that are not hosted on the same domain as your website.</p>
+        <p class="dashed">- Linking to specific pages on your website from external sources, such as social media posts or email campaigns.</p>
+        <p class="dashed">- Working with content management systems that automatically generate absolute URLs.</p>
+        <p>Relative links are generally preferred for internal links within an HTML page due to their flexibility and ease of maintenance. But absolute links may be necessary in certain situations.</p>
+        <strong>And the relative links we use for:</strong>
+        <p class="solid">- Linking within the same website or domain to ensure flexibility and ease of maintenance.</p>
+        <p class="solid">- Moving or restructuring the website directory structure, relative links automatically adjust based on the new location.</p>
+        <p class="solid">- Working on a development or testing environment where the domain may change in the future.</p>
+      <h2>Research and write about image formats used in web-development. What is the difference between JPG, GIF and PNG formats? What is WEBP image type? What is SVG?</h2>
+        <p>Different image formats differ in the loading speed, quality, and compatibility of images on websites.</p>
+        <strong>JPG:</strong>
+        <p class="hidden">- ability to compress files without significant loss of quality.</p>
+        <p>- supporting of millions of colors and ideal for images with gradients or detailed textures.</p>
+        <p>- JPG files are widely supported across browsers and devices.</p>
+        <strong>GIF:</strong>
+        <p>- animated images and simple graphics with limited colors.</p>
+        <p>- supporting of transparency and animation, making it suitable for banners, logos, and icons.</p>
+        <p>- GIF files have a smaller file size compared to other formats, but they may not be ideal for high-quality photographs due to limited color support.</p>
+        <strong>PNG:</strong>
+        <p>- lossless image format that supports transparency and high-quality images with millions of colors.</p>
+        <p>- well-suited for graphics with sharp edges, text, or illustrations that require a transparent background.</p>
+        <p>- PNG files are larger in size compared to JPG but offer better quality and support for alpha transparency.</p>
+        <strong>WEBP:</strong>
+        <p>- modern image format that offers superior compression and smaller file sizes compared to JPG and PNG.</p>
+        <p>- supporting of both lossy and lossless compression, making it versatile for various types of images.</p>
+        <p>- WEBP images provide faster loading times, reduced bandwidth usage, and improved performance on websites.</p>
+        <strong>SVG:</strong>
+        <p>- XML-based vector image format that scales without losing quality, so it’s ideal for responsive web design.</p>
+        <p>- It supports animations, interactivity, and accessibility features, making it suitable for icons, logos, and illustrations.</p>
+        <p>- SVG files are lightweight, editable with code, and can be styled using CSS, offering flexibility in web development.</p>
+        <p>Each image format has its own use cases in web development. Choosing the right format depends on different factors.</p>
+        <h2>Include the screenshot you’ve created to the report. Optionally, float the image.</h2>
+        <p>I don’t have screenshot.</p>
+        <img src="1.png" alt="screenshot"
+        style="width: 1000px;height: 600px;">
+        <h1>Lorem Ipsum:</h1>
+        <p class="back1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back6">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back7">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </main>
+</body>
