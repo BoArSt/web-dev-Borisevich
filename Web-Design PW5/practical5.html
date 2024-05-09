@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>PW5</title>
+<style>
+    body{
+    background-color: black;
+    color:aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    img{
+        width:400px; 
+        height:auto;
+        float:right;
+        margin-left: 10000px;
+        margin-bottom:10px ;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        display: inline;
+    }
+    li a{
+        padding:10px;
+    }
+    footer {
+     background-color: brown;
+     padding: 40px;
+     color: white;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h3>List of Contents</h3>
+    <ul>
+        <li><a href="#A"> A </a></li>
+        <li><a href="#B"> B </a></li>
+        <li><a href="#C"> C </a></li>
+        <li><a href="#D"> D </a></li>
+        <li><a href="#E"> E </a></li>
+    </ul>
+</header>
+<main>
+<h1>Questions</h1>
+<h3 id="A">A. What is a box model in CSS. Give box-sizing property definition.</h3>
+<p>The box model in CSS defines how elements are structured with content, padding, borders, and margins. The box-sizing property determines how the total width and height of an element is calculated, including or excluding padding and border.</p>
+<h3 id="B">B. What is a “clearfix hack” and when does it need to be applied.</h3>
+<p>The "clearfix hack" is a technique used to fix issues with floated elements not properly expanding the parent container's height. It needs to be applied when you have floated elements inside a container and the container collapses or doesn't stretch to contain all the floated elements.</p>
+<strong>Here's the example:</strong>
+<img src="clearfix.png" alt="Clearfix example">
+<h3 id="C">C. What is a “margin collapse” and what are the use cases for margin: auto and negative margin values.</h3>
+<p>Margin collapse happens when the top and bottom margins of two adjacent elements are combined into a single margin. The margin: auto property is used to center an element horizontally within its container, while negative margin values can be used to create overlapping effects or adjust spacing between elements.</p>
+<strong>Here's the example:</strong>
+<div>
+<img src="1.png" alt="Margin collapse example">
+<img src="2.png" alt="Margin collapse example">
+</div>
+<h3 id="D">D. What was the problem with achieving Holy Grail layout.</h3>
+<strong>Here's the example of Holy Grail layout:</strong>
+<img src="HolyGrail.png" alt="Holy Grail example">
+<p>The problem with achieving the Holy Grail layout in CSS was creating a layout with a header, footer, and three columns where the center column was fluid and the side columns were fixed width, all while maintaining a proper flow of content.</p>
+<h3 id="E">E. What are the modern ways to achieve Holy Grail layout.</h3>
+<p>Modern ways to achieve the Holy Grail layout include using CSS Grid, Flexbox, or a combination of both to create a responsive and flexible layout that meets the requirements of the Holy Grail design without the need for complex hacks or workarounds.</p>
+</main>
+<footer>
+    <p>Borisevich Artem</p>
+    <p>IRM|Web-Design</p>
+    <p>09.05.2024</p>
+    <p>08.05 SB BSU</p>
+</footer>
+</body>
