@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>PW6-Flex</title>
+<style>
+   body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+   header{
+    text-align: center;
+   }
+   .top-news{
+    position:absolute;
+    bottom:300px;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1px 10px;
+    text-align: left;
+   }
+   .read-more{
+    background-color: brown;
+    color:white;
+    float:right;
+    padding: 10px;
+   }
+   .read-more2{
+    background-color: brown;
+    color:white;
+    padding: 10px;
+   }
+   h3{
+    color:brown;
+   }
+   .news{
+        display: flex;
+        flex-wrap: wrap;
+        width:80%;
+   }
+   .news-preview{
+        width: 90%;
+        padding: 1px;
+   }
+   .thumbnail{
+    float:left;
+    padding-right: 20px;
+   }
+   article{
+    float:left;
+    width:90%;
+   }
+   nav {
+     float: right;
+     width: 10%;
+     height: 1000px;;
+     background: #ea8a8a;
+     text-align: center;
+    }
+    ul {
+        list-style: none;
+    }
+   @media (max-width: 600px) {
+    article, nav {
+     width: 100%;
+     height: auto;
+    }
+    section {
+     -webkit-flex-direction: column;
+     flex-direction: column;
+    }
+    .hide {
+            width: 70%; 
+        }
+    }
+    @media (max-width: 390px) {
+    .hide {
+          display: none;
+        }
+    }      
+</style>
+</head>
+<body>
+<main>
+    <header>
+        <img src="1.jpg" alt="Train" style="width:100%;height:450px;">
+        <div class="top-news">
+        <h3>Causa Mos Quidem Torqueo</h3>
+        <p>Letalis molior turpis. Brevitas humo jugis praemitto refero. Conventio imputo similis verto virtus. Aliquam camur dolor ea ideo praemitto refero utrum valde valetudo. Abluo genitus ibidem lenis metuo populus saluto. Caecus commoveo eros facilisis ibidem obruo quadrum voco.
+            <a href="#" class="read-more">Read More</a></p>
+     </div>
+    </header>
+    <article class="news">
+        <section class="news-preview">
+            <h3>Abdo Facilisis Loquor Scisco Secundum Vicis</h3>
+            <pre>Submitted by Anonymous (not verified) on Tue, 03/06/2012 - 02:48</pre>
+            <img class="thumbnail" src="6.png" alt="Thumbnail">
+            <p id="n1" class="hide">Aliquam brevitas dolus eligo quae sudo utrum. Dolor ludus pecus refoveo. Commoveo cui eu ille probo quia. Ibidem saepius tincidunt typicus uxor velit. Caecus damnum gemino nutus similis suscipere te. Augue bene esca. Abbas capto enim facilisi imputo natu obruo
+                ratis sit typicus. Ad antehabeo exputo luctus minim occuro quadrum.
+                Dolor esse eu incassum iriure nobis quidne ratis singularis vicis. Appellatio lenis magna
+                obruo quidem.</p>
+                <a href="#" class="read-more2">Read More</a>
+        </section>
+        <section class="news-preview">
+            <h3>Abdo Facilisis Loquor Scisco Secundum Vicis</h3>
+        <pre>Submitted by Anonymous (not verified) on Tue, 03/06/2012 - 02:48</pre>
+            <img class="thumbnail" src="6.png" alt="Thumbnail">
+            <p id="n2" class="hide">Aliquam brevitas dolus eligo quae sudo utrum. Dolor ludus pecus refoveo. Commoveo cui eu ille probo quia. Ibidem saepius tincidunt typicus uxor velit. Caecus damnum gemino nutus similis suscipere te. Augue bene esca. Abbas capto enim facilisi imputo natu obruo
+                ratis sit typicus. Ad antehabeo exputo luctus minim occuro quadrum.
+                Dolor esse eu incassum iriure nobis quidne ratis singularis vicis. Appellatio lenis magna
+                obruo quidem.</p>
+                <a href="#" class="read-more2">Read More</a>
+        </section>
+        <section class="news-preview">
+            <h3>Abdo Facilisis Loquor Scisco Secundum Vicis</h3>
+        <pre>Submitted by Anonymous (not verified) on Tue, 03/06/2012 - 02:48</pre>
+            <img class="thumbnail" src="6.png" alt="Thumbnail">
+            <p id="n3" class="hide">Aliquam brevitas dolus eligo quae sudo utrum. Dolor ludus pecus refoveo. Commoveo cui eu ille probo quia. Ibidem saepius tincidunt typicus uxor velit. Caecus damnum gemino nutus similis suscipere te. Augue bene esca. Abbas capto enim facilisi imputo natu obruo
+                ratis sit typicus. Ad antehabeo exputo luctus minim occuro quadrum.
+                Dolor esse eu incassum iriure nobis quidne ratis singularis vicis. Appellatio lenis magna
+                obruo quidem.</p>
+                <a href="#" class="read-more2">Read More</a>
+        </section>
+    </article>
+    <nav>
+        <h3>Navigation Bar</h3>
+        <ul>
+          <li><a href="#n1">News 1</a></li>
+          <li><a href="#n2">News 2</a></li>
+          <li><a href="#n3">News 3</a></li>
+        </ul>
+      </nav>
+</main>
+</body>
