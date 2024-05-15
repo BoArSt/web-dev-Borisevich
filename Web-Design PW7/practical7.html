@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>PW7</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> 
+<script>
+  function calculate(num1, operator, num2) {
+ switch(operator) {
+ case '+':
+ return num1 + num2;
+ case '-':
+ return num1 - num2;
+ case '*':
+ return num1 * num2;
+ case '/':
+ if(num2 != 0) {
+ return num1 / num2;
+ } else {
+ return "Error: Division by zero is not allowed.";
+ }
+ default:
+ return "Error: Invalid operator.";
+ }
+}
+function performCalculation() {
+ let num1 = parseFloat(document.getElementById('num1').value);
+ let operator = document.getElementById('operator').value;
+ let num2 = parseFloat(document.getElementById('num2').value);
+ let result = calculate(num1, operator, num2);
+ document.getElementById('result').textContent= result;
+}
+</script>
+<style>
+    output {
+     display: inline;
+    }
+</style>
+</head>
+<body>
+    <form>
+        <fieldset>
+          <legend>Calculator:</legend>
+          <label for="num1">Firt number:</label><br>
+          <input type="number" id="num1" name="num1" value=""><br>
+          <label for="operator">Choose an operator:</label><br>
+          <select id="operator" name="operator">
+            <option value="+"> + </option>
+            <option value="-"> - </option>
+            <option value="*"> * </option>
+            <option value="/"> / </option>
+         </select><br>
+          <label for="num2">Second number:</label><br>
+          <input type="number" id="num2" name="num2" value=""><br><br>
+          <label for="result">Result:</label>
+          <output id="result" for="num1 operator num2"></output><br><br>
+          <button type="button" onclick="performCalculation()">Calculate</button>
+          <button type="reset">Reset</button>
+        </fieldset>
+      </form>
+    <div class="owl-carousel owl-theme">
+        <div>
+            <div>
+                <h3>Repaint and Reflow:</h3>
+                <p>Repaint is like changing the color of a wall without moving any furniture. The browser updates just the color.</p>
+                <p>Reflow is like rearranging the furniture in a room. The browser recalculates the layout, which can take more time and resources.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>JavaScript and Page Load Speed:</h3>
+                <p>JavaScript can slow down a webpage by making it wait for scripts to load and run, especially if the scripts are complex or poorly optimized.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>Minification:</h3>
+                <p>Minification is like tidying up code by removing extra spaces, comments, and shortening names without changing how it works. It helps websites load faster by reducing file sizes and making scripts easier for browsers to read quickly.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>JS Web Worker:</h3>
+                <p>A JavaScript Web Worker is like having a helper working in the background while you focus on your main tasks. They're used for running heavy tasks separately from the main browser thread to keep the webpage responsive and fast.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>Sources:</h3>
+                <p>https://medium.com/swlh/what-the-heck-is-repaint-and-reflow-in-the-browser-b2d0fb980c08</p>
+                <p>https://getpublii.com/blog/javascript-speed-and-performance.html</p>
+                <p>https://www.imperva.com/learn/performance/minification/</p>
+                <p>https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                items:1,
+                margin:10,
+                loop:true
+            });
+        });
+    </script>
+</body>
